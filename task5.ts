@@ -4,46 +4,19 @@ let str3 = 'наледь';
 let str4 = 'попрек';
 let str5 = 'рубило';
 let lengthWords = 0;
+let words = [str1,str2,str3,str4,str5]
+let wordIndex = 0;
+let index = 0
+let word;
 
-let index = 0;
-while(str1[index]){
-    console.log(str1[index])
-    index = index + 1
-}
-// index = 6
-
-lengthWords = lengthWords + index;
-
-
-index = 0;
-while(str2[index]){
-    console.log(str2[index])
-    index = index + 1
+while(words[wordIndex]) {
+    index = 0
+    word = words[wordIndex];
+    while(word[index]) {
+        index = index + 1
+    }
+    lengthWords = lengthWords + index
+    wordIndex = wordIndex + 1
 }
 
-lengthWords = lengthWords + index;
-
-index = 0;
-while(str3[index]){
-    console.log(str3[index])
-    index = index + 1
-}
-
-lengthWords = lengthWords + index;
-
-index = 0;
-while(str4[index]){
-    console.log(str4[index])
-    index = index + 1
-}
-
-lengthWords = lengthWords + index;
-
-index = 0;
-while(str5[index]){
-    console.log(str5[index])
-    index = index + 1
-}
-
-lengthWords = lengthWords + index;
 console.log(lengthWords)
