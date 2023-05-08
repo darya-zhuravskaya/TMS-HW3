@@ -1,0 +1,13 @@
+{
+  "name": "hw3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "task1": "npx ts-node task1",
+    "task2": "npx ts-node task2",
+    "task3": "npx ts-node task3"
+  },
+  "author": "darya-zhuravskaya",
+  "license": "ISC"
+}
