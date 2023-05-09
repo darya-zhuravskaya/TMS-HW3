@@ -12,7 +12,8 @@
     "task6": "npx ts-node task6",
     "task7": "npx ts-node task7",
     "task8": "npx ts-node task8",
-    "task9": "npx ts-node task9"
+    "task9": "npx ts-node task9",
+    "task10": "npx ts-node task10"
 
 
   },
