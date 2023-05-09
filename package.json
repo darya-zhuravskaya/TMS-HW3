@@ -13,7 +13,10 @@
     "task7": "npx ts-node task7",
     "task8": "npx ts-node task8",
     "task9": "npx ts-node task9",
-    "task10": "npx ts-node task10"
+    "task10": "npx ts-node task10",
+    "task11": "npx ts-node task11",
+    "task12": "npx ts-node task12",
+    "task13": "npx ts-node task13"
 
 
   },
