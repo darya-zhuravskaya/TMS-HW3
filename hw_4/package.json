@@ -9,7 +9,13 @@
     "task3": "npx ts-node task3",
     "task4": "npx ts-node task4",
     "task5": "npx ts-node task5",
-    "task6": "npx ts-node task6"
+    "task6": "npx ts-node task6",
+    "task7": "npx ts-node task7",
+    "task8": "npx ts-node task8",
+    "task9": "npx ts-node task9",
+    "task10": "npx ts-node task10",
+    "task11": "npx ts-node task11",
+    "task12": "npx ts-node task12"
   },
   "author": "darya-zhuravskaya",
   "license": "ISC"
