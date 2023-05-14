@@ -1,0 +1,16 @@
+{
+  "name": "hw_4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "task1": "npx ts-node task1",
+    "task2": "npx ts-node task2",
+    "task3": "npx ts-node task3",
+    "task4": "npx ts-node task4",
+    "task5": "npx ts-node task5",
+    "task6": "npx ts-node task6"
+  },
+  "author": "darya-zhuravskaya",
+  "license": "ISC"
+}
