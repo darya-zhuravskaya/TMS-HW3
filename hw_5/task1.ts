@@ -3,7 +3,7 @@ function getSum(a:number):number {
     let b = 0;
     
     while(b < a){
-        b = b + 1
+        b++
         sum = sum + b
     } 
     return sum;

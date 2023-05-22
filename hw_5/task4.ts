@@ -3,7 +3,7 @@ function getSumNumbers(number:number):number{
     let digit: number;
     while (number > 0) {
         digit = number % 10;
-        sum = sum + digit;
+        sum += digit;
         number = Math.trunc(number / 10);
     }
     return sum;

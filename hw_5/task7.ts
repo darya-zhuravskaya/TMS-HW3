@@ -4,7 +4,7 @@
     while (i <= n) {
        
         result = result * i;
-        i = i + 1;
+        i++;
         
     } 
     console.log(result);
