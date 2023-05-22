@@ -4,7 +4,7 @@ function getSum(a:number):number {
     
     while(b < a){
         b++
-        sum = sum + b
+        sum += b
     } 
     return sum;
 }
