@@ -1,0 +1,20 @@
+{
+  "name": "hw_6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "task1": "npx node task1.js",
+    "task2": "npx node task2.js",
+    "task3": "npx node task3.js",
+    "task4": "npx node task4.js",
+    "task5": "npx node task5.js",
+    "task6": "npx ts-node task6.ts",
+    "advanced2": "npx ts-node advanced2.ts",
+    "advanced3": "npx ts-node advanced3.ts",
+    "advanced1": "npx ts-node advanced1.ts"
+
+  },
+  "author": "darya-zhuravskaya",
+  "license": "ISC"
+}
