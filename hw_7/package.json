@@ -1,0 +1,21 @@
+{
+  "name": "hw_7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "task1": "npx ts-node task1.ts",
+    "task2": "npx ts-node task2.ts",
+    "task3": "npx ts-node task3.ts",
+    "task4": "npx ts-node task4.ts",
+    "task5": "npx ts-node task5.ts",
+    "task6": "npx ts-node task6.ts",
+    "task7": "npx ts-node task7.ts",
+    "advanced1": "npx ts-node advanced1.ts",
+    "advanced2": "npx ts-node advanced2.ts",
+    "advanced3": "npx ts-node advanced3.ts",
+    "advanced4": "npx ts-node advanced4.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}
