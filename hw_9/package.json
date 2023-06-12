@@ -1,0 +1,11 @@
+{
+  "name": "hw_9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "task1": "npx ts-node task1"
+  },
+  "author": "",
+  "license": "ISC"
+}
