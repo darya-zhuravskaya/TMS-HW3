@@ -71,4 +71,26 @@ export class Products {
          this.products.forEach((product)=> product.shortenDescription())
     }
 
+    filterByRate(rate:number){
+       return this.products.filter((product)=> product.rate.rate >= rate).sort((a,b)=>{
+            return compare(a.rate.count, b.rate.count)
+        }).reverse()
+    }
+
+    discountForCategory(discount:number, category:string){
+        this.products.filter((product)=> product.category === category).forEach((product)=> product.price = product.price - product.price * discount/100)
+    }
+
+    roundPrice(){
+        this.products.forEach((product)=> product.price = Math.round(product.price))
+    }
+
+    OverallCount(){
+        let sum = 0
+        for (let product of this.products){
+            sum = sum + product.rate.count
+        }
+        return sum
+    }
+
 }

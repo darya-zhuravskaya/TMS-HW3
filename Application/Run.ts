@@ -27,6 +27,17 @@ class Programm{
         products.shortDescription()
         await writeData("result_8.json", products.Products)
 
+        await writeData("result_5.json", products.filterByRate(3.9))
+
+        products.discountForCategory(30,"men's clothing")
+        await writeData("result_9.json", products.Products)
+
+        products.roundPrice()
+        await writeData("result_10.json", products.Products)
+
+        await writeData("result_11.json", products.OverallCount())
+
+    
 
 
         // console.log(products.findProductTitle("Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"))
@@ -36,6 +47,7 @@ class Programm{
 //         console.log(products.Products)
 
 // console.log(products.findFormatImage (["111", "png", "jpeg"] ))
+// console.log(products.filterByRate (3.9))
 }
 }
 
