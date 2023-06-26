@@ -37,6 +37,7 @@ class Programm{
 
         await writeData("result_11.json", products.OverallCount())
 
+        await writeData("result_6.json", Object.fromEntries(products.groupByCategory()))
     
 
 

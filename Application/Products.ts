@@ -93,4 +93,19 @@ export class Products {
         return sum
     }
 
+    groupByCategory() {
+        this.products.sort((a,b)=> {
+            return compare(a.price, b.price)
+        })
+        let map = new Map<string, Product[]>()
+        for (let product of this.products){
+            if (map.get(product.category) === undefined){
+                map.set(product.category, [product])
+            } else{
+                map.get(product.category)?.push(product)
+            }
+        }
+        return map
+    }
+
 }
