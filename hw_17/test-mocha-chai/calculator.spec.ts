@@ -1,69 +1,66 @@
 import { Calculator } from "../Calculator";
 import {expect} from "chai"
 
-describe("Mocha-Chai Calculator tests Multiplication and  Division", function(){
-    it ("Test 1 Multiplication of positive numbers", function(){
+describe("Calculator tests Multiplication", function(){
+    it ("When positive numbers", function(){
         const calculator = new Calculator({x:2, y:6}, '*')
         const result = calculator.execute()
-        expect(12,"Test failed").equal(12)
+        expect(result,"Test failed").equal(12)
     })
 
-    it ("Test 2 Multiplication of negative numbers", function(){
+    it ("When negative numbers", function(){
         const calculator = new Calculator({x:-2, y:-6}, '*')
         const result = calculator.execute()
-        expect(12,"Test failed").equal(12)
+        expect(result,"Test failed").equal(12)
     })
 
-    it ("Test 3 Multiplication float number", function(){
+    it ("When float numbers", function(){
         const calculator = new Calculator({x:2.1, y:33.5}, '*')
         const result = calculator.execute()
-        expect(70.35,"Test failed").equal(70.35)
+        expect(result,"Test failed").equal(70.35)
     })
 
-    it ("Test 4 Multiplication 0", function(){
+    it ("When one of arguments is 0", function(){
         const calculator = new Calculator({x:2.1, y:0}, '*')
         const result = calculator.execute()
-        expect(0,"Test failed").equal(0)
+        expect(result,"Test failed").equal(0)
     })
 
-    // it ("Test 5 Multiplication null", function(){
-    //     const calculator = new Calculator({x:2.1, y:null}, '*')
-    //     const result = calculator.execute()
-    //     expect(0,"Test failed").equal(0)
-    // })
+    it ("When second argument is null", function(){
+        const calculator = new Calculator({x:2.1, y:null}, '*')
+        const result = calculator.execute()
+        expect(result,"Test failed").equal(undefined)
+    })
+})
 
-    it ("Test 6 Division of positive numbers", function(){
+describe("Calculator tests Division", function(){
+    it ("When positive numbers", function(){
         const calculator = new Calculator({x:6, y:2}, '/')
         const result = calculator.execute()
-        expect(3,"Test failed").equal(3)
+        expect(result,"Test failed").equal(3)
     })
 
-    it ("Test 7 Division of negative numbers", function(){
+    it ("When negative numbers", function(){
         const calculator = new Calculator({x:-6, y:-2}, '/')
         const result = calculator.execute()
-        expect(3,"Test failed").equal(3)
+        expect(result,"Test failed").equal(3)
     })
 
-    it ("Test 8 Division bigger number", function(){
+    it ("When dividing by a bigger number", function(){
         const calculator = new Calculator({x:1, y:2}, '/')
         const result = calculator.execute()
-        expect(0.5, "Test failed").equal(0.5)
+        expect(result, "Test failed").equal(0.5)
     })
 
-    // it ("Test 9 Division 0", function(){
-    //     const calculator = new Calculator({x:15, y:0}, '/')
-    //     const result = calculator.execute()
-    //     expect(0.5, "Test failed").equal(0.5)
-    // })
+    it ("When the second argument is 0", function(){
+        const calculator = new Calculator({x:15, y:0}, '/')
+        const result = calculator.execute()
+        expect(result, "Test failed").equal(undefined)
+    })
 
-    // it ("Test 10 Division null", function(){
-    //     const calculator = new Calculator({x:1, y:2}, '/')
-    //     const result = calculator.execute()
-    //     expect(0.5, "Test failed").equal(0.5)
-    // })
-
-
-
-
-
+    it ("When the first argument is null", function(){
+        const calculator = new Calculator({x:null, y:2}, '/')
+        const result = calculator.execute()
+        expect(result, "Test failed").equal(undefined)
+    })
 })

@@ -27,34 +27,43 @@ export class Calculator {
     }
 
     addition(): number | undefined {
-        if (this.numbers.x === null || this.numbers.y === null){
+        const { x, y } = this.numbers;
+
+        if (x === null || y === null){
             return undefined 
         }
-        return this.numbers.x + this.numbers.y
+
+        return x + y;
     }
 
     subtraction(): number | undefined {
-        if (this.numbers.x === null || this.numbers.y === null){
+       const { x, y } = this.numbers;
+
+        if (x === null || y === null){
             return undefined 
         }
 
-        return this.numbers.x - this.numbers.y
+        return x - y;
     }
 
     multiplication(): number | undefined {
-        if (this.numbers.x === null || this.numbers.y === null){
+        const { x, y } = this.numbers;
+
+        if (x === null || y === null){
             return undefined 
         }
 
-        return this.numbers.x * this.numbers.y
+        return +(x * y).toFixed(2);
     }
 
     division(): number | undefined {
-        if (this.numbers.x === null || this.numbers.y === null){
+        const { x, y } = this.numbers;
+
+        if (x === null || y === null || y === 0){
             return undefined 
         }
-        
-        return this.numbers.x / this.numbers.y
+
+        return x / y;
     }
 
 }
