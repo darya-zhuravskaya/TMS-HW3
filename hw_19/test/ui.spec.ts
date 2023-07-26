@@ -21,8 +21,6 @@ describe("Test suite", () => {
     });
 
     test("When search returns some products", async () => {
-        let driver: WebDriver = await new Builder().forBrowser("chrome").build();
-        await driver.manage().window().maximize();
         await driver.get("https://www.onliner.by/");
         let searchField = driver.findElement(By.xpath('//div[@id="fast-search"]/form/input[@name="query"]'));
         await driver.wait(until.elementIsVisible(searchField));
@@ -41,8 +39,6 @@ describe("Test suite", () => {
     })
 
     test("When search does not return any products", async () => {
-        let driver: WebDriver = await new Builder().forBrowser("chrome").build();
-        await driver.manage().window().maximize();
         await driver.get("https://www.onliner.by/");
         let searchField = driver.findElement(By.xpath('//div[@id="fast-search"]/form/input[@name="query"]'));
         await driver.wait(until.elementIsVisible(searchField));
